@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Map 2020</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id='map'>
+
+    <!-- new legend stuff -->
+
+        <div id='title' class="title">
+            <h1>Manufacturing and farming are the most common industries among counties with specialized economic types</h1>
+            <p>Data shown here comes from the <a href='https://www.ers.usda.gov/data-products/county-typology-codes.aspx'>U.S. Department of Agriculture's Economic Research Service</a>. Each county is assigned a primary industry dependence, visualized here. This data was published in 2015.</p>
+            <hr>
+            <div id="economic-legend" class="legend">
+                <h4>County Economic Type</h4>
+                <p><em>Click on each county for detailed economic information</em></p>
+                
+                <div><span style="background-color: #a8d4ad"></span>Farming</div>
+                <div><span style="background-color: #cde6a6"></span>Federal/State Government</div>
+                <div><span style="background-color: #f2f79e"></span>Recreation</div>
+                <div><span style="background-color: #e8ec67"></span>Mining</div>
+                <div><span style="background-color: #9dc7b5"></span>Nonspecialized</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end new legend stuff -->
+
+
+    <div id='map2'>
+        <div id='title' class="title">
+            <h1>Storms are the most common disaster in the U.S. since 1960</h1>
+            <p>Data represented here shows disaster sites from 1960 to 2018, as collected by Centre for Research on the Epidemiology of Disasters' Emergency Events Database.
+                <br>
+                <br>
+                Data Source:
+                <br>
+                Rosvold, E., and H. Buhaug. 2021. Geocoded Disasters (GDIS) Dataset. Palisades, New York: NASA Socioeconomic Data and Applications Center (SEDAC). <a href='https://doi.org/10.7927/zz3b-8y61'>https://doi.org/10.7927/zz3b-8y61Accessed</a>. 3 JUNE 2022.
+            </p>
+            <hr>
+            <div id="disaster-legend" class="legend2">
+                <h4>Natural Disasters by Type</h4>
+                <p><em>Click on each dot for the date and location of each natural disaster</em></p>
+                
+                <div><span style="background-color: #264653"></span>Storm</div>
+                <div><span style="background-color: #2a9d8f"></span>Flood</div>
+                <div><span style="background-color: #e76f51"></span>Extreme Temperature</div>
+                <div><span style="background-color: #e9c46a"></span>Drought</div>
+                <div><span style="background-color: #91b66e"></span>Earthquake</div>
+                <div><span style="background-color: #f4a261"></span>Landslide</div>
+                <div><span style="background-color: #6b2737"></span>Volcanic Activity</div>
+    
+            </div>
+    </div>
+
+
+    <script type='text/javascript' src="map.js"></script>
+</body>
+</html>
